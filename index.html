@@ -13,21 +13,34 @@
     <link
         href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
         rel="stylesheet">
+    <script src="/scripts/script.js" defer></script>
 </head>
 
 <body>
-    <main>
+    <main class="main">
         <video class="back-video" autoplay loop muted plays-inline src="/img/bg_video.mp4"></video>
-        <header>
+        <header id="navbar" class="navbar">
             <div>
                 <a href="/index.html"><img src="./img/mack_logo.png" alt=""></a>
             </div>
-            <ul>
-                <li><a class="active" href="">Portfolio</a></li>
-                <li><a href="">About</a></li>
-                <li><a href="">Contact</a></li>
+            <a href="#" class="toggle-button">
+                <span class="bar0"></span>
+                <span class="bar1"></span>
+                <span class="bar2"></span>
+            </a>
+            <ul class="navbar-links">
+                <li><a class="active" href="#">Portfolio</a></li>
+                <li><a href="#">About</a></li>
+                <li><a href="#">Contact</a></li>
             </ul>
         </header>
+        <nav class="mobile-nav">
+            <ul class="navbar-links">
+                <li><a href="#">Portfolio</a></li>
+                <li><a href="#">About</a></li>
+                <li><a href="#">Contact</a></li>
+            </ul>
+        </nav>
         <section class="first_section">
             <div class="first_section_item_left">
                 <img src="./img/mack.png" alt="">
@@ -42,9 +55,39 @@
                 <p>Niet alleen dat, ik heb ook veel ervaring in het oplossen van ingewikkelde problemen en in het
                     ontwerpen van logo's en posters</p>
             </article>
+            <div class="circle_arrow_down">
+                <a href="#scroll_second_section">
+                    <?xml version="1.0" encoding="utf-8"?>
+                    <!-- Generator: Adobe Illustrator 27.0.0, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
+                    <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg"
+                        xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 100 100"
+                        style="enable-background:new 0 0 100 100;" xml:space="preserve">
+                        <style type="text/css">
+                            .st0 {
+                                fill: none;
+                                stroke: #000000;
+                                stroke-width: 4;
+                                stroke-linecap: round;
+                                stroke-linejoin: round;
+                            }
+                        </style>
+                        <g>
+                            <path d="M50,4c25.4,0,46,20.6,46,46S75.4,96,50,96S4,75.4,4,50S24.6,4,50,4 M50,0C22.4,0,0,22.4,0,50s22.4,50,50,50s50-22.4,50-50
+S77.6,0,50,0L50,0z" />
+                        </g>
+                        <g>
+                            <line class="st0" x1="50" y1="29.5" x2="50" y2="70.5" />
+                            <g>
+                                <path d="M35.1,55.9L35.1,55.9c0.8-0.8,2.1-0.7,2.8,0.1l10.6,11.4c0.8,0.9,2.1,0.9,2.9,0L62.1,56c0.8-0.8,2-0.9,2.8-0.1l0,0
+    c0.8,0.8,0.9,2,0.1,2.8L51.5,73.3c-0.8,0.9-2.1,0.9-2.9,0L35,58.7C34.3,57.9,34.3,56.7,35.1,55.9z" />
+                            </g>
+                        </g>
+                    </svg>
+                </a>
+            </div>
         </section>
 
-        <section class="second_section">
+        <section id="scroll_second_section" class="second_section">
             <div class="second_section_item_left">
                 <h2>Over Mij</h2>
                 <div></div>
@@ -189,7 +232,7 @@
                 </div>
             </div>
         </section>
-        <footer>
+        <footer class="footer">
             <div class="footer-container">
                 <div class="footer-row">
                     <div class="about">
@@ -214,16 +257,18 @@
             </div>
             <hr>
             <div class="footer-container">
-                <div class="copyright-text">
-                    <p class="copyright-text">Copyright &copy; 2022 All Rights Reserved by Mack Hooijman.</p>
-                </div>
-                <div class="social-icons">
-                    <ul>
-                        <li><a href="https://www.instagram.com/design_by_mack/"><i
-                                    class="fa-brands fa-instagram"></i></a></li>
-                        <li><a href="https://www.linkedin.com/in/mack-hooijman-9858b1224"><i
-                                    class="fa-brands fa-linkedin"></i></a></li>
-                    </ul>
+                <div class="copyright-container">
+                    <div class="copyright-text">
+                        <p>Copyright &copy; 2023 All Rights Reserved by Mack Hooijman.</p>
+                    </div>
+                    <div class="social-icons">
+                        <ul>
+                            <li><a href="https://www.instagram.com/design_by_mack/"><i
+                                        class="fa-brands fa-instagram"></i></a></li>
+                            <li><a href="https://www.linkedin.com/in/mack-hooijman-9858b1224"><i
+                                        class="fa-brands fa-linkedin"></i></a></li>
+                        </ul>
+                    </div>
                 </div>
             </div>
         </footer>
