@@ -168,6 +168,8 @@ article {
   width: 30em;
 }
 
+
+
 .first_section_item_left div {
   height: 3px;
   width: 7em;
@@ -178,6 +180,13 @@ article {
 .first_section_item_left i {
   color: black;
   font-size: 2em;
+  transition: 0.3s;
+}
+
+.first_section_item_left i:hover {
+  color: #F2A516;
+  font-size: 2em;
+  transition: 0.3s;
 }
 
 .first_section_item_left a:nth-of-type(2) {
@@ -195,9 +204,9 @@ article {
 .first_section_item_left img {
   position: absolute;
   z-index: -15;
-  width: 30em;
-  margin-top: -8em;
-  margin-left: 15em;
+  width: 25em;
+  margin-top: -5em;
+  margin-left: 20em;
 }
 
 .first_section_item_right p {
@@ -291,13 +300,13 @@ svg:nth-of-type(4) {
 .grid-hover {
   overflow: hidden;
   position: relative;
-  transition: 1.2s;
+  transition: .3s;
   filter: drop-shadow(1.2em 1.2em 2em rgb(208, 208, 208));
 
 }
 
 .grid-container a {
-  transition: 1.2s;
+  transition: .3s;
   background-color: white;
   width: 100%;
   height: 30em;
@@ -313,7 +322,7 @@ svg:nth-of-type(4) {
 .grid-container img {
   width: 50%;
   cursor: pointer;
-  transition: .3s;
+  transition: .5s;
 }
 
 .grid-hover p {
@@ -324,7 +333,7 @@ svg:nth-of-type(4) {
   color: #99000000;
   font-size: 1.7em;
   font-weight: 600;
-  transition: 1.2s;
+  transition: .5s;
 }
 
 .grid-container .grid-hover p {
@@ -333,20 +342,20 @@ svg:nth-of-type(4) {
 
 .hover-zoom:hover {
   filter: brightness(80%);
-  transition: 1.2s;
+  transition: .5s;
 }
 
 .hover-zoom {
-  transition: 1.2s;
+  transition: .5s;
 }
 
 .hover-zoom:hover {
   transform: scale(1.1);
-  transition: 1.2s;
+  transition: .5s;
 }
 
 .grid-hover:hover p {
-  transition: 1.2s;
+  transition: .5s;
   color: black;
   transform: scale(1.05);
 }
@@ -412,6 +421,10 @@ footer ul li:last-of-type {
   margin: 0;
 }
 
+.about {
+  margin-bottom: 1em;
+}
+
 .footer-row {
   display: flex;
   flex-direction: row;
@@ -420,9 +433,8 @@ footer ul li:last-of-type {
 }
 
 .footer-container {
-
   display: flex;
-  flex-direction: row;
+  flex-direction: column;
 }
 
 .copyright-container {
@@ -430,12 +442,26 @@ footer ul li:last-of-type {
   flex-direction: row;
   width: 100%;
   justify-content: space-around;
-  margin-bottom: 1.5em;
+  padding: 1.5em 0 1.5em 0;
+  background-color: #202024;
+  color: #737373;
+  height: 100%;
 }
 
 .copyright-text,
 .social-icons {
   width: 30em;
+}
+
+.copyright-container i{
+  color: #737373;
+  transition: 0.3s;
+}
+
+.copyright-container i:hover {
+  color: #e1e1e1;
+  transition: 0.3s;
+  
 }
 
 .copyright-text p {
@@ -458,25 +484,30 @@ footer ul li:last-of-type {
   margin-left: .5em;
 }
 
-
-hr {
-  border-top: 1px solid #737373;
-  position: relative;
-  width: calc(100% - 30em);
-  margin-top: 1em;
-  margin-bottom: 1em;
-  border-style: solid;
-  color: #99000000;
-}
-
 .about,
 .links {
   width: 30em;
 }
 
+
 .links {
   display: flex;
   justify-content: flex-end;
+  margin-bottom: 2em;
+}
+
+.links li {
+  margin-bottom: .3em;
+}
+
+.links a {
+  transition: 0.3s;
+  cursor: pointer;
+}
+
+.links li a:hover {
+  transition: 0.3s;
+  color: white;
 }
 
 /*************/
@@ -500,7 +531,7 @@ hr {
   height: 4px;
   width: 100%;
   background-color: black;
-  border-radius: 10px;
+  border-radius: 2em;
   transition: .1s;
 }
 
@@ -594,6 +625,9 @@ hr {
     background-color: red;
   }
 
+  .grid-container a {
+    height: 12em;
+  }
 
   .mobile-nav {
     position: fixed;
@@ -656,8 +690,8 @@ hr {
 
 
   .first_section_item_left img {
-    width: 13em;
-    margin: -1.3em 0em 0em 8.5em;
+    width: 9em;
+    margin: -1.3em 0em 0em 11em;
   }
 
   .first_section_item_right p {
@@ -698,6 +732,45 @@ hr {
 
   .second_section_item_right {
     display: none;
+  }
+
+  .second_section h3 {
+    margin-bottom: 0;
+  }
+
+  .footer-container {
+    display: flex;
+    flex-direction: column;
+    margin: 0em 2em 0em 2em;
+  }
+
+  .footer-container .about {
+    display: none;
+  }
+
+  .footer-container .links {
+    justify-content: flex-start;
+  }
+
+  .links li {
+    margin-bottom: .2em;
+  }
+
+  .links li a {
+    color: #acacac;
+  }
+
+  .copyright-container {
+    padding: 1.5em 1.5em 1.5em 1.5em;
+  }
+
+  .copyright-text {
+    margin-right: 3em;
+  }
+
+  .social-icons {
+    margin-left: 1em;
+    width: 0em;
   }
 
 }
